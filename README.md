@@ -2,7 +2,7 @@
 
 A highly responsive, beautiful, hardware-accelerated radial menu for **Hyprland** (Wayland) written in Python and C. It allows you to bind a mouse button (like a side button) to open a circular overlay containing custom actions, window management shortcuts, or applications around your cursor.
 
-![Preview](https://github.com/cachyos/cachyos-artwork/raw/main/cachyos-wallpapers/neon_grid.png) *(Note: Add your own custom wallpaper/aesthetic to make it yours!)*
+![Preview](./preview.png)
 
 ---
 
