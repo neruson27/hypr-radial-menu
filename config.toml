@@ -1,0 +1,67 @@
+# hypr-radial-menu Configuration
+
+[menu]
+# Radial menu sizing (in logical pixels)
+radius_outer = 160
+radius_inner = 55
+deadzone = 25
+
+# Fonts (Noto Color Emoji is used for icons)
+font_family_label = "Outfit, Inter, Sans"
+font_family_icon = "Noto Color Emoji"
+font_size_label = 11
+font_size_icon = 22
+
+# Define slices clockwise starting from the top.
+# Supported action types:
+#   - "command": Runs a shell command.
+#   - "shortcut": Simulates a key combination via hyprctl dispatch sendshortcut.
+#   - "hyprland": Runs a hyprctl dispatcher command directly.
+
+[[slices]]
+label = "Terminal"
+icon = "🖥️"
+type = "command"
+action = "kitty"
+
+[[slices]]
+label = "Screenshot"
+icon = "📸"
+type = "command"
+action = "grim -g \"$(slurp)\" - | wl-copy"
+
+[[slices]]
+label = "Copy"
+icon = "📋"
+type = "shortcut"
+action = "CTRL, C"
+
+[[slices]]
+label = "Files"
+icon = "📁"
+type = "command"
+action = "dolphin"
+
+[[slices]]
+label = "Close Window"
+icon = "❌"
+type = "hyprland"
+action = "killactive"
+
+[[slices]]
+label = "Float Window"
+icon = "🔓"
+type = "hyprland"
+action = "togglefloating"
+
+[[slices]]
+label = "Paste"
+icon = "📥"
+type = "shortcut"
+action = "CTRL, V"
+
+[[slices]]
+label = "Browser"
+icon = "🌐"
+type = "command"
+action = "chrome"
